@@ -1,0 +1,1732 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+
+    <!-- Tailwind Generated Css File -->
+    <link rel="stylesheet" href="dist/output.css" />
+
+    <!-- google fonts Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome kit -->
+    <script
+      src="https://kit.fontawesome.com/37c954ca6f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body class="font-rubik w-full">
+    <div id="app" class="wrapper">
+      <!-- top bar start -->
+      <section class="top-nav-wrap mb-10 border-b-[0.1rem]">
+        <div class="mx-auto w-[90%] max-w-[1760px]">
+          <div class="top-nav flex justify-between py-3 text-base">
+            <div class="hidden md:block">
+              <span>Welcome to ZaloCart store</span>
+            </div>
+            <div class="top-nav-right">
+              <ul class="top-nav-right-list flex gap-5">
+                <li class="group border-r-[0.1rem] pr-4">
+                  <a
+                    href=""
+                    class="flex items-center gap-2 group-hover:text-blue-500"
+                    ><span
+                      class="material-symbols-outlined text-blue-500"
+                      style="font-size: 1rem"
+                    >
+                      phone_in_talk
+                    </span>
+                    Contact
+                  </a>
+                </li>
+                <li class="group border-r-[0.1rem] pr-4">
+                  <a
+                    href=""
+                    class="flex items-center gap-2 group-hover:text-blue-500"
+                    ><span
+                      class="material-symbols-outlined text-blue-500"
+                      style="font-size: 1rem"
+                    >
+                      compare_arrows
+                    </span>
+                    Compare
+                  </a>
+                </li>
+                <li
+                  class="group relative flex cursor-pointer items-center gap-2 border-r-[0.1rem] pr-4 hover:text-blue-500"
+                >
+                  <span
+                    class="material-symbols-outlined text-blue-500 group-hover:text-blue-500"
+                    style="font-size: 1rem"
+                  >
+                    translate
+                  </span>
+                  English
+                  <span
+                    class="material-symbols-outlined text-slate-500 group-hover:text-blue-500"
+                    style="font-size: 1rem"
+                  >
+                    expand_more
+                  </span>
+
+                  <!-- need to be functional -->
+                  <div
+                    id="language-dropdown"
+                    class="absolute right-0 top-[2.3rem] z-50 hidden"
+                  >
+                    <ul
+                      class="language-dropdown-list border-[0.1rem] border-slate-300 bg-white py-2 shadow-lg"
+                    >
+                      <li class="px-5 py-2 hover:text-blue-600">
+                        <a href="">English</a>
+                      </li>
+                      <li class="px-5 py-2 hover:text-blue-600">
+                        <a href="">Vietnamese</a>
+                      </li>
+                      <li class="px-5 py-2 hover:text-blue-600">
+                        <a href="">French</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- need to be functional -->
+                </li>
+                <li class="group">
+                  <a
+                    href=""
+                    class="flex items-center gap-2 group-hover:text-blue-500"
+                  >
+                    <span
+                      class="material-symbols-outlined text-blue-500"
+                      style="font-size: 1rem"
+                    >
+                      login
+                    </span>
+                    Login
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- top bar end -->
+
+      <!-- header start -->
+      <header class="header-wrap">
+        <div class="header-wrap-inner">
+          <!-- haeder search start -->
+          <div class="mx-auto w-[90%] max-w-[1760px]">
+            <div class="justify-betwee flex gap-20">
+              <div class="header-column-left flex items-center gap-4">
+                <div class="sidebar-menu-icon-wrap md:hidden">
+                  <div class="sidebar-menu-icon group cursor-pointer">
+                    <span
+                      class="mb-1 block h-0.5 w-4 bg-slate-800 transition-all duration-300 group-hover:w-6 group-hover:bg-blue-500"
+                    ></span>
+                    <span
+                      class="mb-1 block h-0.5 w-6 bg-slate-800 transition-all duration-300 group-hover:bg-blue-500"
+                    ></span>
+                    <span
+                      class="mb-1 block h-0.5 w-3 bg-slate-800 transition-all duration-300 group-hover:w-6 group-hover:bg-blue-500"
+                    ></span>
+                  </div>
+                </div>
+                <a
+                  href=""
+                  class="header-logo flex items-center gap-2 text-3xl text-slate-500"
+                >
+                  <svg
+                    class="h-12 w-12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="100"
+                    height="100"
+                    viewBox="0 0 48 48"
+                  >
+                    <path
+                      fill="#2962ff"
+                      d="M15,36V6.827l-1.211-0.811C8.64,8.083,5,13.112,5,19v10c0,7.732,6.268,14,14,14h10	c4.722,0,8.883-2.348,11.417-5.931V36H15z"
+                    ></path>
+                    <path
+                      fill="#eee"
+                      d="M29,5H19c-1.845,0-3.601,0.366-5.214,1.014C10.453,9.25,8,14.528,8,19	c0,6.771,0.936,10.735,3.712,14.607c0.216,0.301,0.357,0.653,0.376,1.022c0.043,0.835-0.129,2.365-1.634,3.742	c-0.162,0.148-0.059,0.419,0.16,0.428c0.942,0.041,2.843-0.014,4.797-0.877c0.557-0.246,1.191-0.203,1.729,0.083	C20.453,39.764,24.333,40,28,40c4.676,0,9.339-1.04,12.417-2.916C42.038,34.799,43,32.014,43,29V19C43,11.268,36.732,5,29,5z"
+                    ></path>
+                    <path
+                      fill="#2962ff"
+                      d="M36.75,27C34.683,27,33,25.317,33,23.25s1.683-3.75,3.75-3.75s3.75,1.683,3.75,3.75	S38.817,27,36.75,27z M36.75,21c-1.24,0-2.25,1.01-2.25,2.25s1.01,2.25,2.25,2.25S39,24.49,39,23.25S37.99,21,36.75,21z"
+                    ></path>
+                    <path
+                      fill="#2962ff"
+                      d="M31.5,27h-1c-0.276,0-0.5-0.224-0.5-0.5V18h1.5V27z"
+                    ></path>
+                    <path
+                      fill="#2962ff"
+                      d="M27,19.75v0.519c-0.629-0.476-1.403-0.769-2.25-0.769c-2.067,0-3.75,1.683-3.75,3.75	S22.683,27,24.75,27c0.847,0,1.621-0.293,2.25-0.769V26.5c0,0.276,0.224,0.5,0.5,0.5h1v-7.25H27z M24.75,25.5	c-1.24,0-2.25-1.01-2.25-2.25S23.51,21,24.75,21S27,22.01,27,23.25S25.99,25.5,24.75,25.5z"
+                    ></path>
+                    <path
+                      fill="#2962ff"
+                      d="M21.25,18h-8v1.5h5.321L13,26h0.026c-0.163,0.211-0.276,0.463-0.276,0.75V27h7.5	c0.276,0,0.5-0.224,0.5-0.5v-1h-5.321L21,19h-0.026c0.163-0.211,0.276-0.463,0.276-0.75V18z"
+                    ></path>
+                  </svg>
+                  ZaloCart
+                </a>
+              </div>
+              <div class="header-search-wrap flex-1">
+                <div class="header-search relative">
+                  <form
+                    class="search-form w-full rounded border-[0.1rem] py-1 pe-1 ps-8"
+                  >
+                    <div class="header-search-lg flex items-center gap-8">
+                      <input
+                        type="text"
+                        name="query"
+                        autocomplete="off"
+                        placeholder="Search for products"
+                        class="flex-1 border-0 outline-none"
+                      />
+                      <div
+                        class="header-search-lg-right flex items-center gap-8"
+                      >
+                        <!-- categories dropdown -->
+                        <div class="header-search-categories relative">
+                          <div
+                            class="header-search-categories-icon flex items-center"
+                          >
+                            <span>All categories</span>
+                            <span class="material-symbols-outlined">
+                              expand_more
+                            </span>
+                          </div>
+                          <div
+                            class="header-search-categories-dropdown absolute left-0 top-[2.6rem] z-10 hidden w-[13rem] border-[0.1rem] border-slate-300 bg-white px-8 py-8 shadow-lg"
+                          >
+                            <ul class="flex flex-col gap-4">
+                              <li
+                                class="transition-colors duration-300 hover:text-blue-500"
+                              >
+                                <a href="">All Categories</a>
+                              </li>
+                              <li
+                                class="transition-colors duration-300 hover:text-blue-500"
+                              >
+                                <a href="">Men's Fashion</a>
+                              </li>
+                              <li
+                                class="transition-colors duration-300 hover:text-blue-500"
+                              >
+                                <a href="">Womens Fashion</a>
+                              </li>
+                              <li
+                                class="transition-colors duration-300 hover:text-blue-500"
+                              >
+                                <a href="">Jackets</a>
+                              </li>
+                              <li
+                                class="transition-colors duration-300 hover:text-blue-500"
+                              >
+                                <a href="">Shirts</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <button
+                          type="submit"
+                          class="flex items-center justify-center rounded-sm bg-blue-500 p-3 text-white transition-all duration-300 hover:bg-blue-600"
+                        >
+                          <span class="material-symbols-outlined">
+                            search
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="header-search-sm hidden">
+                      <span class="material-symbols-outlined"> search </span>
+                    </div>
+                  </form>
+                  <div
+                    class="searched-keywords absolute -bottom-[2.5rem] left-0 flex w-full items-center justify-center text-sm text-slate-500"
+                  >
+                    <div class="searched-keywords-inner-wrap flex gap-4">
+                      <label class="shrink-0 text-blue-500">
+                        Most searched:
+                      </label>
+                      <ul
+                        class="searched-keywords-list grow-1 flex flex-wrap gap-4"
+                      >
+                        <li class="border-r-[0.1rem] pr-4 hover:text-blue-500">
+                          <a href=""> apple </a>
+                        </li>
+                        <li class="border-r-[0.1rem] pr-4 hover:text-blue-500">
+                          <a href=""> apple iphone 15 </a>
+                        </li>
+                        <li class="border-r-[0.1rem] pr-4 hover:text-blue-500">
+                          <a href=""> 20w adapter </a>
+                        </li>
+                        <li class="border-r-[0.1rem] pr-4 hover:text-blue-500">
+                          <a href=""> backcover </a>
+                        </li>
+                        <li class="hover:text-blue-500">
+                          <a href=""> msi bravo </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-search-sm-form hidden">
+                  <form class="search-form">
+                    <div class="btn-close">
+                      <i class="las la-arrow-left"></i>
+                    </div>
+                    <input
+                      type="text"
+                      name="query"
+                      autocomplete="off"
+                      placeholder="Search for products"
+                      class="form-control search-input-sm"
+                    />
+                    <button type="submit" class="btn btn-search">
+                      <i class="las la-search"></i>
+                    </button>
+                  </form>
+                </div>
+                <!---->
+              </div>
+              <div class="header-column-right flex items-center gap-8">
+                <a href="" class="header-wishlist group flex items-center gap-5"
+                  ><div class="icon-wrap relative flex items-center">
+                    <span
+                      class="material-symbols-outlined text-slate-500 group-hover:text-blue-500"
+                      style="font-size: 2.1rem"
+                    >
+                      favorite
+                    </span>
+                    <div
+                      class="count absolute -right-4 -top-2 flex aspect-square w-6 items-center justify-center rounded-full bg-red-500 text-xs text-white"
+                    >
+                      12
+                    </div>
+                  </div>
+                  <span class="group-hover:text-blue-500">Favorites</span></a
+                >
+                <div class="header-cart group flex items-center gap-5">
+                  <div class="icon-wrap relative flex items-center">
+                    <span
+                      class="material-symbols-outlined text-9xl text-slate-500 group-hover:text-blue-500"
+                      style="font-size: 2.1rem"
+                    >
+                      add_shopping_cart
+                    </span>
+                    <div
+                      class="count absolute -right-4 -top-2 flex aspect-square w-6 items-center justify-center rounded-full bg-red-500 text-xs text-white"
+                    >
+                      23
+                    </div>
+                  </div>
+                  <span class="group-hover:text-blue-500">$0.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- haeder search end -->
+
+          <!-- header nav start -->
+          <section class="navigation-wrap mt-20 text-sm">
+            <div
+              class="navigation-inner mx-auto flex w-[90%] max-w-[1760px] items-center justify-between gap-12 rounded border-[0.075rem] border-slate-300 py-1 ps-1"
+            >
+              <div class="category-nav relative">
+                <div
+                  class="category-nav-inner flex cursor-pointer gap-4 rounded bg-blue-500 px-8 py-3.5 text-white transition-all duration-300 hover:bg-blue-600"
+                >
+                  <span class="pe-5">ALL CATEGORIES</span>
+                  <span class="material-symbols-outlined"> menu </span>
+                </div>
+                <div
+                  class="category-dropdown-wrap absolute -left-1 top-[5.5rem] rounded border-[0.099rem] border-slate-300 bg-white pe-4 shadow-lg"
+                >
+                  <!-- category dropdown start -->
+                  <div class="category-dropdown">
+                    <ul
+                      class="mega-menu vertical-megamenu flex flex-col gap-4 py-5"
+                    >
+                      <!-- menu item start -->
+                      <li class="fluid-menu relative">
+                        <a
+                          href=""
+                          target="_self"
+                          data-text="Electronics"
+                          class="group flex items-center justify-between gap-4"
+                        >
+                          <span
+                            class="relative flex items-center gap-2 pl-6 transition-all duration-300 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-2.5 before:-translate-x-full before:-translate-y-1/2 before:rounded-r-full before:bg-blue-500 before:opacity-0 before:transition-all before:duration-300 group-hover:text-blue-500 group-hover:before:translate-x-0 group-hover:before:opacity-100"
+                          >
+                            <span
+                              class="material-symbols-outlined text-slate-500"
+                              style="font-size: 1.5em"
+                            >
+                              power </span
+                            >Electronics</span
+                          >
+                          <span
+                            class="material-symbols-outlined group-hover:text-blue-500"
+                          >
+                            chevron_right
+                          </span>
+                        </a>
+
+                        <!-- submenu start -->
+                        <ul
+                          class="list-inline fluid-menu-wrap absolute -right-[10.4rem] top-0 z-10 grid grid-cols-3 border-[0.099rem] bg-white shadow-lg"
+                          style="
+                            background-image: url(&quot;https://fleetcart.envaysoft.com/storage/media/sYz5yv4PFARhTermBT1eIeQFM1kbKgLLZFPwq0XM.jpeg&quot;);
+                          "
+                        >
+                          <li>
+                            <div class="fluid-menu-content">
+                              <div class="fluid-menu-list">
+                                <h5 class="fluid-menu-title">
+                                  <a
+                                    href="https://fleetcart.envaysoft.com/en/categories/mobiles/products"
+                                    target="_self"
+                                  >
+                                    Mobiles
+                                  </a>
+                                </h5>
+                                <ul class="list-inline fluid-sub-menu-list">
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/smartphones/products"
+                                      target="_self"
+                                    >
+                                      Smartphones
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/android/products"
+                                      target="_self"
+                                    >
+                                      Android
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/iphone/products"
+                                      target="_self"
+                                    >
+                                      iPhone
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/featured/products"
+                                      target="_self"
+                                    >
+                                      Featured
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/refurbished/products"
+                                      target="_self"
+                                    >
+                                      Refurbished
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/brands/products"
+                                      target="_self"
+                                    >
+                                      Brands
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="fluid-menu-list">
+                                <h5 class="fluid-menu-title">
+                                  <a
+                                    href="https://fleetcart.envaysoft.com/en/categories/mobile-accessories/products"
+                                    target="_self"
+                                  >
+                                    Mobile Accessories
+                                  </a>
+                                </h5>
+                                <ul class="list-inline fluid-sub-menu-list">
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/cases-covers/products"
+                                      target="_self"
+                                    >
+                                      Cases &amp; Covers
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/cables/products"
+                                      target="_self"
+                                    >
+                                      Cables
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/chargers/products"
+                                      target="_self"
+                                    >
+                                      Chargers
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/power-bank/products"
+                                      target="_self"
+                                    >
+                                      Power Bank
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/mobile-headphones/products"
+                                      target="_self"
+                                    >
+                                      Headphones
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/screen-protectors/products"
+                                      target="_self"
+                                    >
+                                      Screen Protectors
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="fluid-menu-list">
+                                <h5 class="fluid-menu-title">
+                                  <a
+                                    href="https://fleetcart.envaysoft.com/en/categories/hot-brands/products"
+                                    target="_self"
+                                  >
+                                    Hot Brands
+                                  </a>
+                                </h5>
+                                <ul class="list-inline fluid-sub-menu-list">
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/oneplus/products"
+                                      target="_self"
+                                    >
+                                      OnePlus
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/apple/products"
+                                      target="_self"
+                                    >
+                                      Apple
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/samsung/products"
+                                      target="_self"
+                                    >
+                                      Samsung
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/huawei/products"
+                                      target="_self"
+                                    >
+                                      Huawei
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/sony/products"
+                                      target="_self"
+                                    >
+                                      Sony
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="fluid-menu-list">
+                                <h5 class="fluid-menu-title">
+                                  <a
+                                    href="https://fleetcart.envaysoft.com/en/categories/laptops/products"
+                                    target="_self"
+                                  >
+                                    Laptops
+                                  </a>
+                                </h5>
+                                <ul class="list-inline fluid-sub-menu-list">
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/mackbook/products"
+                                      target="_self"
+                                    >
+                                      Mackbook
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/gaming/products"
+                                      target="_self"
+                                    >
+                                      Gaming
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/ultraslim/products"
+                                      target="_self"
+                                    >
+                                      Ultraslim
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/tablets/products"
+                                      target="_self"
+                                    >
+                                      Tablets
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/all-laptops/products"
+                                      target="_self"
+                                    >
+                                      All Laptops
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="fluid-menu-list">
+                                <h5 class="fluid-menu-title">
+                                  <a
+                                    href="https://fleetcart.envaysoft.com/en/categories/computer-accessories/products"
+                                    target="_self"
+                                  >
+                                    Computer Accessories
+                                  </a>
+                                </h5>
+                                <ul class="list-inline fluid-sub-menu-list">
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/monitors/products"
+                                      target="_self"
+                                    >
+                                      Monitors
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/keyboard-mouse/products"
+                                      target="_self"
+                                    >
+                                      Keyboard &amp; Mouse
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/pendrive/products"
+                                      target="_self"
+                                    >
+                                      Pendrive
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/speaker/products"
+                                      target="_self"
+                                    >
+                                      Speaker
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <!-- submenu end -->
+                      </li>
+                      <!-- menu item end -->
+
+                      <!-- menu item start -->
+                      <li class="fluid-menu">
+                        <a
+                          href=""
+                          target="_self"
+                          data-text="Men's Fashion"
+                          class="group flex items-center justify-between gap-4"
+                        >
+                          <span
+                            class="relative flex items-center gap-2 pl-6 transition-all duration-300 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-2.5 before:-translate-x-full before:-translate-y-1/2 before:rounded-r-full before:bg-blue-500 before:opacity-0 before:transition-all before:duration-300 group-hover:text-blue-500 group-hover:before:translate-x-0 group-hover:before:opacity-100"
+                          >
+                            <span
+                              class="material-symbols-outlined text-slate-500 group-hover:text-blue-500"
+                              style="font-size: 1.5em"
+                            >
+                              eyeglasses </span
+                            >Men's Fashion</span
+                          >
+                          <span
+                            class="material-symbols-outlined group-hover:text-blue-500"
+                          >
+                            chevron_right
+                          </span>
+                        </a>
+                        <!-- submenu start -->
+                        <ul
+                          class="list-inline fluid-menu-wrap hidden"
+                          style="
+                            background-image: url(&quot;https://fleetcart.envaysoft.com/storage/media/VNwyPPjdR15wlVWqB2iOYVDnZjW2X2qI7sDq5yan.png&quot;);
+                          "
+                        >
+                          <li>
+                            <div class="fluid-menu-content">
+                              <div class="fluid-menu-list">
+                                <h5 class="fluid-menu-title">
+                                  <a
+                                    href="https://fleetcart.envaysoft.com/en/categories/clothing/products"
+                                    target="_self"
+                                  >
+                                    Clothing
+                                  </a>
+                                </h5>
+                                <ul class="list-inline fluid-sub-menu-list">
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/shirts/products"
+                                      target="_self"
+                                    >
+                                      Shirts
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/all-clothing/products"
+                                      target="_self"
+                                    >
+                                      All Clothing
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/sportswear/products"
+                                      target="_self"
+                                    >
+                                      Sportswear
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/tees-polos/products"
+                                      target="_self"
+                                    >
+                                      Belts
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/pants/products"
+                                      target="_self"
+                                    >
+                                      Pants
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/formal-shoes/products"
+                                      target="_self"
+                                    >
+                                      Formal Shoes
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="fluid-menu-list">
+                                <h5 class="fluid-menu-title">
+                                  <a
+                                    href="https://fleetcart.envaysoft.com/en/categories/shoes/products"
+                                    target="_self"
+                                  >
+                                    Shoes
+                                  </a>
+                                </h5>
+                                <ul class="list-inline fluid-sub-menu-list">
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/all-shoes/products"
+                                      target="_self"
+                                    >
+                                      All Shoes
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/sneakers/products"
+                                      target="_self"
+                                    >
+                                      Sneakers
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/boots/products"
+                                      target="_self"
+                                    >
+                                      Boots
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/sandals/products"
+                                      target="_self"
+                                    >
+                                      Sandals
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/slippers-flip-flops/products"
+                                      target="_self"
+                                    >
+                                      Slippers &amp; Flip-flops
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/sports-shoes/products"
+                                      target="_self"
+                                    >
+                                      Sports Shoes
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="fluid-menu-list">
+                                <h5 class="fluid-menu-title">
+                                  <a
+                                    href="https://fleetcart.envaysoft.com/en/categories/outerwear-jackets/products"
+                                    target="_self"
+                                  >
+                                    Outerwear &amp; Jackets
+                                  </a>
+                                </h5>
+                                <ul class="list-inline fluid-sub-menu-list">
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/trench/products"
+                                      target="_self"
+                                    >
+                                      Trench
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/genuine-leather/products"
+                                      target="_self"
+                                    >
+                                      Genuine Leather
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/down-jackets/products"
+                                      target="_self"
+                                    >
+                                      Down Jackets
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/wool-blends/products"
+                                      target="_self"
+                                    >
+                                      Wool &amp; Blends
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/suits-blazer/products"
+                                      target="_self"
+                                    >
+                                      Suits &amp; Blazer
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="fluid-menu-list">
+                                <h5 class="fluid-menu-title">
+                                  <a
+                                    href="https://fleetcart.envaysoft.com/en/categories/hot-sale/products"
+                                    target="_self"
+                                  >
+                                    Hot Sale
+                                  </a>
+                                </h5>
+                                <ul class="list-inline fluid-sub-menu-list">
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/hoodies-sweatshirts/products"
+                                      target="_self"
+                                    >
+                                      Glasses
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/jackets/products"
+                                      target="_self"
+                                    >
+                                      Jackets
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/t-shirts/products"
+                                      target="_self"
+                                    >
+                                      T-Shirts
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/shirts-Qfb3u0OP/products"
+                                      target="_self"
+                                    >
+                                      Shirts
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/sweaters/products"
+                                      target="_self"
+                                    >
+                                      Belts
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="fluid-menu-list">
+                                <h5 class="fluid-menu-title">
+                                  <a
+                                    href="https://fleetcart.envaysoft.com/en/categories/bottoms/products"
+                                    target="_self"
+                                  >
+                                    Bottoms
+                                  </a>
+                                </h5>
+                                <ul class="list-inline fluid-sub-menu-list">
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/casual-pants/products"
+                                      target="_self"
+                                    >
+                                      Casual Pants
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/sweatpants/products"
+                                      target="_self"
+                                    >
+                                      Sweatpants
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/cargo-pants/products"
+                                      target="_self"
+                                    >
+                                      Cargo Pants
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/jeans/products"
+                                      target="_self"
+                                    >
+                                      Jeans
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/harem-pants/products"
+                                      target="_self"
+                                    >
+                                      Harem Pants
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <!-- submenu end -->
+                      </li>
+                      <!-- menu item end -->
+
+                      <!-- menu item start -->
+                      <li class="dropdown multi-level">
+                        <a
+                          href=""
+                          target="_self"
+                          data-text="Laptops"
+                          class="group flex items-center justify-between gap-4"
+                        >
+                          <span
+                            class="relative flex items-center gap-2 pl-6 transition-all duration-300 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-2.5 before:-translate-x-full before:-translate-y-1/2 before:rounded-r-full before:bg-blue-500 before:opacity-0 before:transition-all before:duration-300 group-hover:text-blue-500 group-hover:before:translate-x-0 group-hover:before:opacity-100"
+                          >
+                            <span
+                              class="material-symbols-outlined text-slate-500"
+                              style="font-size: 1.5em"
+                            >
+                              laptop_mac </span
+                            >Laptops</span
+                          >
+                          <span
+                            class="material-symbols-outlined group-hover:text-blue-500"
+                          >
+                            chevron_right
+                          </span>
+                        </a>
+                        <!-- submenu start -->
+                        <ul class="list-inline sub-menu hidden">
+                          <li>
+                            <a
+                              href="https://fleetcart.envaysoft.com/en/brands/hp/products"
+                              target="_self"
+                            >
+                              HP
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://fleetcart.envaysoft.com/en/categories/huawei/products"
+                              target="_self"
+                            >
+                              Huawei
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://fleetcart.envaysoft.com/en/brands/asus/products"
+                              target="_self"
+                            >
+                              Asus
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://fleetcart.envaysoft.com/en/brands/apple/products"
+                              target="_self"
+                            >
+                              Apple
+                            </a>
+                          </li>
+                        </ul>
+                        <!-- submenu end -->
+                      </li>
+                      <!-- menu item end -->
+
+                      <!-- menu item start -->
+                      <li>
+                        <a
+                          href=""
+                          target="_self"
+                          data-text="Mobiles"
+                          class="group flex items-center justify-between gap-4"
+                        >
+                          <span
+                            class="relative flex items-center gap-2 pl-6 transition-all duration-300 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-2.5 before:-translate-x-full before:-translate-y-1/2 before:rounded-r-full before:bg-blue-500 before:opacity-0 before:transition-all before:duration-300 group-hover:text-blue-500 group-hover:before:translate-x-0 group-hover:before:opacity-100"
+                          >
+                            <span
+                              class="material-symbols-outlined text-slate-500"
+                              style="font-size: 1.5em"
+                            >
+                              phone_iphone </span
+                            >Mobiles</span
+                          >
+                          <span
+                            class="material-symbols-outlined group-hover:text-blue-500"
+                          >
+                            chevron_right
+                          </span>
+                        </a>
+                      </li>
+                      <!-- menu item end -->
+
+                      <!-- menu item start -->
+                      <li class="fluid-menu">
+                        <a
+                          href=""
+                          target="_self"
+                          data-text="Consumer Electronics"
+                          class="group flex items-center justify-between gap-2"
+                        >
+                          <span
+                            class="relative flex items-center gap-2 pl-6 transition-all duration-300 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-2.5 before:-translate-x-full before:-translate-y-1/2 before:rounded-r-full before:bg-blue-500 before:opacity-0 before:transition-all before:duration-300 group-hover:text-blue-500 group-hover:before:translate-x-0 group-hover:before:opacity-100"
+                          >
+                            <span
+                              class="material-symbols-outlined text-slate-500"
+                              style="font-size: 1.5em"
+                            >
+                              memory </span
+                            >Consumer Electronics</span
+                          >
+                          <span
+                            class="material-symbols-outlined group-hover:text-blue-500"
+                          >
+                            chevron_right
+                          </span>
+                        </a>
+                        <!-- submenu start -->
+                        <ul
+                          class="list-inline fluid-menu-wrap hidden"
+                          style="
+                            background-image: url(&quot;https://fleetcart.envaysoft.com/storage/media/0sJXzZis0Jt1ww9IJ5T9ksgCPCw5tAWbaexto4tU.jpeg&quot;);
+                          "
+                        >
+                          <li>
+                            <div class="fluid-menu-content">
+                              <div class="fluid-menu-list">
+                                <h5 class="fluid-menu-title">
+                                  <a
+                                    href="https://fleetcart.envaysoft.com/en/categories/mobiles/products"
+                                    target="_self"
+                                  >
+                                    Mobiles
+                                  </a>
+                                </h5>
+                                <ul class="list-inline fluid-sub-menu-list">
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/smartphones/products"
+                                      target="_self"
+                                    >
+                                      Smartphones
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/android/products"
+                                      target="_self"
+                                    >
+                                      Android
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/iphone/products"
+                                      target="_self"
+                                    >
+                                      iPhone
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/featured/products"
+                                      target="_self"
+                                    >
+                                      Featured
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/refurbished/products"
+                                      target="_self"
+                                    >
+                                      Refurbished
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/brands/products"
+                                      target="_self"
+                                    >
+                                      Brands
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="fluid-menu-list">
+                                <h5 class="fluid-menu-title">
+                                  <a
+                                    href="https://fleetcart.envaysoft.com/en/categories/mobile-accessories/products"
+                                    target="_self"
+                                  >
+                                    Mobile Accessories
+                                  </a>
+                                </h5>
+                                <ul class="list-inline fluid-sub-menu-list">
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/cases-covers/products"
+                                      target="_self"
+                                    >
+                                      Cases &amp; Covers
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/cables/products"
+                                      target="_self"
+                                    >
+                                      Cables
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/chargers/products"
+                                      target="_self"
+                                    >
+                                      Chargers
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/power-bank/products"
+                                      target="_self"
+                                    >
+                                      Power Bank
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/mobile-headphones/products"
+                                      target="_self"
+                                    >
+                                      Headphones
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/screen-protectors/products"
+                                      target="_self"
+                                    >
+                                      Screen Protectors
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="fluid-menu-list">
+                                <h5 class="fluid-menu-title">
+                                  <a
+                                    href="https://fleetcart.envaysoft.com/en/categories/hot-brands/products"
+                                    target="_self"
+                                  >
+                                    Hot Brands
+                                  </a>
+                                </h5>
+                                <ul class="list-inline fluid-sub-menu-list">
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/oneplus/products"
+                                      target="_self"
+                                    >
+                                      OnePlus
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/apple/products"
+                                      target="_self"
+                                    >
+                                      Apple
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/samsung/products"
+                                      target="_self"
+                                    >
+                                      Samsung
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/huawei/products"
+                                      target="_self"
+                                    >
+                                      Huawei
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/sony/products"
+                                      target="_self"
+                                    >
+                                      Sony
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="fluid-menu-list">
+                                <h5 class="fluid-menu-title">
+                                  <a
+                                    href="https://fleetcart.envaysoft.com/en/categories/laptops/products"
+                                    target="_self"
+                                  >
+                                    Laptops
+                                  </a>
+                                </h5>
+                                <ul class="list-inline fluid-sub-menu-list">
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/mackbook/products"
+                                      target="_self"
+                                    >
+                                      Mackbook
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/gaming/products"
+                                      target="_self"
+                                    >
+                                      Gaming
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/ultraslim/products"
+                                      target="_self"
+                                    >
+                                      Ultraslim
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/tablets/products"
+                                      target="_self"
+                                    >
+                                      Tablets
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/all-laptops/products"
+                                      target="_self"
+                                    >
+                                      All Laptops
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="fluid-menu-list">
+                                <h5 class="fluid-menu-title">
+                                  <a
+                                    href="https://fleetcart.envaysoft.com/en/categories/computer-accessories/products"
+                                    target="_self"
+                                  >
+                                    Computer Accessories
+                                  </a>
+                                </h5>
+                                <ul class="list-inline fluid-sub-menu-list">
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/monitors/products"
+                                      target="_self"
+                                    >
+                                      Monitors
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/keyboard-mouse/products"
+                                      target="_self"
+                                    >
+                                      Keyboard &amp; Mouse
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/pendrive/products"
+                                      target="_self"
+                                    >
+                                      Pendrive
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="https://fleetcart.envaysoft.com/en/categories/speaker/products"
+                                      target="_self"
+                                    >
+                                      Speaker
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <!-- submenu end -->
+                      </li>
+                      <!-- menu item end -->
+
+                      <!-- menu item start -->
+                      <li>
+                        <a
+                          href=""
+                          target="_self"
+                          data-text="Televisions"
+                          class="group flex items-center justify-between gap-10"
+                        >
+                          <span
+                            class="relative flex items-center gap-2 pl-6 transition-all duration-300 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-2.5 before:-translate-x-full before:-translate-y-1/2 before:rounded-r-full before:bg-blue-500 before:opacity-0 before:transition-all before:duration-300 group-hover:text-blue-500 group-hover:before:translate-x-0 group-hover:before:opacity-100"
+                          >
+                            <span
+                              class="material-symbols-outlined text-slate-500"
+                              style="font-size: 1.5em"
+                            >
+                              tv </span
+                            >Televisions</span
+                          >
+                          <span
+                            class="material-symbols-outlined group-hover:text-blue-500"
+                          >
+                            chevron_right
+                          </span>
+                        </a>
+                      </li>
+                      <!-- menu item end -->
+
+                      <!-- menu item start -->
+                      <li>
+                        <a
+                          href=""
+                          target="_self"
+                          data-text="Watches"
+                          class="group flex items-center justify-between gap-10"
+                        >
+                          <span
+                            class="relative flex items-center gap-2 pl-6 transition-all duration-300 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-2.5 before:-translate-x-full before:-translate-y-1/2 before:rounded-r-full before:bg-blue-500 before:opacity-0 before:transition-all before:duration-300 group-hover:text-blue-500 group-hover:before:translate-x-0 group-hover:before:opacity-100"
+                          >
+                            <span
+                              class="material-symbols-outlined text-slate-500"
+                              style="font-size: 1.5em"
+                            >
+                              watch </span
+                            >Watches</span
+                          >
+                          <span
+                            class="material-symbols-outlined group-hover:text-blue-500"
+                          >
+                            chevron_right
+                          </span>
+                        </a>
+                      </li>
+                      <!-- menu item end -->
+
+                      <!-- menu item start -->
+                      <li class="dropdown multi-level">
+                        <a
+                          href=""
+                          target="_self"
+                          data-text="Fashion"
+                          class="group flex items-center justify-between gap-10"
+                        >
+                          <span
+                            class="relative flex items-center gap-2 pl-6 transition-all duration-300 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-2.5 before:-translate-x-full before:-translate-y-1/2 before:rounded-r-full before:bg-blue-500 before:opacity-0 before:transition-all before:duration-300 group-hover:text-blue-500 group-hover:before:translate-x-0 group-hover:before:opacity-100"
+                          >
+                            <span
+                              class="material-symbols-outlined text-slate-500"
+                              style="font-size: 1.5em"
+                            >
+                              styler </span
+                            >Fashion</span
+                          >
+                          <span
+                            class="material-symbols-outlined group-hover:text-blue-500"
+                          >
+                            chevron_right
+                          </span>
+                        </a>
+
+                        <!-- submenu start -->
+                        <ul class="list-inline sub-menu hidden">
+                          <li>
+                            <a
+                              href="https://fleetcart.envaysoft.com/en/categories/mens-fashion/products"
+                              target="_self"
+                            >
+                              Men's Fashion
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://fleetcart.envaysoft.com/en/categories/womens-fashion/products"
+                              target="_self"
+                            >
+                              Women's Fashion
+                            </a>
+                          </li>
+                        </ul>
+                        <!-- submenu end -->
+                      </li>
+                      <!-- menu item end -->
+
+                      <!-- menu item start -->
+                      <li>
+                        <a
+                          href=""
+                          target="_self"
+                          data-text="Backpacks"
+                          class="group flex items-center justify-between gap-10"
+                        >
+                          <span
+                            class="relative flex items-center gap-2 pl-6 transition-all duration-300 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-2.5 before:-translate-x-full before:-translate-y-1/2 before:rounded-r-full before:bg-blue-500 before:opacity-0 before:transition-all before:duration-300 group-hover:text-blue-500 group-hover:before:translate-x-0 group-hover:before:opacity-100"
+                          >
+                            <span
+                              class="material-symbols-outlined text-slate-500"
+                              style="font-size: 1.5em"
+                            >
+                              Backpack </span
+                            >Backpacks</span
+                          >
+                          <span
+                            class="material-symbols-outlined group-hover:text-blue-500"
+                          >
+                            chevron_right
+                          </span>
+                        </a>
+                      </li>
+                      <!-- menu item end -->
+
+                      <!-- menu item start -->
+                      <li>
+                        <a
+                          href=""
+                          target="_self"
+                          data-text="Tablets"
+                          class="group flex items-center justify-between gap-10"
+                        >
+                          <span
+                            class="relative flex items-center gap-2 pl-6 transition-all duration-300 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-2.5 before:-translate-x-full before:-translate-y-1/2 before:rounded-r-full before:bg-blue-500 before:opacity-0 before:transition-all before:duration-300 group-hover:text-blue-500 group-hover:before:translate-x-0 group-hover:before:opacity-100"
+                          >
+                            <span
+                              class="material-symbols-outlined text-slate-500"
+                              style="font-size: 1.5em"
+                            >
+                              tablet </span
+                            >Tablets</span
+                          >
+                          <span
+                            class="material-symbols-outlined group-hover:text-blue-500"
+                          >
+                            chevron_right
+                          </span>
+                        </a>
+                      </li>
+                      <!-- menu item end -->
+
+                      <!-- menu item start -->
+                      <li class="" style="">
+                        <a
+                          href=""
+                          target="_self"
+                          data-text="Headphones"
+                          class="group flex items-center justify-between gap-10"
+                        >
+                          <span
+                            class="relative flex items-center gap-2 pl-6 transition-all duration-300 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-2.5 before:-translate-x-full before:-translate-y-1/2 before:rounded-r-full before:bg-blue-500 before:opacity-0 before:transition-all before:duration-300 group-hover:text-blue-500 group-hover:before:translate-x-0 group-hover:before:opacity-100"
+                          >
+                            <span
+                              class="material-symbols-outlined text-slate-500"
+                              style="font-size: 1.5em"
+                            >
+                              headset_mic </span
+                            >Headphones</span
+                          >
+                          <span
+                            class="material-symbols-outlined group-hover:text-blue-500"
+                          >
+                            chevron_right
+                          </span>
+                        </a>
+                      </li>
+                      <!-- menu item end -->
+
+                      <!-- menu item start -->
+                      <li class="hide" style="">
+                        <a
+                          href=""
+                          target="_self"
+                          data-text="Hot Sale"
+                          class="group flex items-center justify-between gap-10"
+                        >
+                          <span
+                            class="relative flex items-center gap-2 pl-6 transition-all duration-300 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-2.5 before:-translate-x-full before:-translate-y-1/2 before:rounded-r-full before:bg-blue-500 before:opacity-0 before:transition-all before:duration-300 group-hover:text-blue-500 group-hover:before:translate-x-0 group-hover:before:opacity-100"
+                          >
+                            <span
+                              class="material-symbols-outlined text-slate-500"
+                              style="font-size: 1.5em"
+                            >
+                              local_fire_department </span
+                            >Hot Sale</span
+                          >
+                          <span
+                            class="material-symbols-outlined group-hover:text-blue-500"
+                          >
+                            chevron_right
+                          </span>
+                        </a>
+                      </li>
+                      <!-- menu item end -->
+
+                      <!-- menu item start -->
+                      <li class="hide" style="">
+                        <a
+                          href=""
+                          target="_self"
+                          data-text="Shoes"
+                          class="group flex items-center justify-between gap-10"
+                        >
+                          <span
+                            class="relative flex items-center gap-2 pl-6 transition-all duration-300 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-2.5 before:-translate-x-full before:-translate-y-1/2 before:rounded-r-full before:bg-blue-500 before:opacity-0 before:transition-all before:duration-300 group-hover:text-blue-500 group-hover:before:translate-x-0 group-hover:before:opacity-100"
+                          >
+                            <span
+                              class="material-symbols-outlined text-slate-500"
+                              style="font-size: 1.5em"
+                            >
+                              footprint </span
+                            >Shoes</span
+                          >
+                          <span
+                            class="material-symbols-outlined group-hover:text-blue-500"
+                          >
+                            chevron_right
+                          </span>
+                        </a>
+                      </li>
+                      <!-- menu item end -->
+
+                      <!-- menu item start -->
+                      <li class="more-categories" style="">
+                        <a
+                          href=""
+                          target="_self"
+                          data-text="All Categories"
+                          class="group flex items-center justify-between gap-10"
+                        >
+                          <span
+                            class="relative flex items-center gap-2 pl-6 transition-all duration-300 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-2.5 before:-translate-x-full before:-translate-y-1/2 before:rounded-r-full before:bg-blue-500 before:opacity-0 before:transition-all before:duration-300 group-hover:text-blue-500 group-hover:before:translate-x-0 group-hover:before:opacity-100"
+                          >
+                            <span
+                              class="material-symbols-outlined text-slate-500"
+                              style="font-size: 1.5em"
+                            >
+                              list_alt </span
+                            >All Categories</span
+                          >
+                          <span
+                            class="material-symbols-outlined group-hover:text-blue-500"
+                          >
+                            chevron_right
+                          </span>
+                        </a>
+                      </li>
+                      <!-- menu item end -->
+                    </ul>
+                  </div>
+                  <!-- category dropdown end -->
+                </div>
+              </div>
+              <nav class="navbar navbar-expand-sm flex-1">
+                <ul class="navbar-nav horizontal-megamenu flex gap-4">
+                  <li class="nav-item hover:font-medium hover:text-blue-500">
+                    <a
+                      href="https://fleetcart.envaysoft.com/en/products"
+                      target="_self"
+                      data-text="Shop"
+                      class="nav-link menu-item"
+                    >
+                      Shop
+                    </a>
+                  </li>
+                  <li class="nav-item hover:font-medium hover:text-blue-500">
+                    <a
+                      href="https://fleetcart.envaysoft.com/en/brands"
+                      target="_self"
+                      data-text="Brands"
+                      class="nav-link menu-item"
+                    >
+                      Brands
+                    </a>
+                  </li>
+                  <li class="nav-item hover:font-medium hover:text-blue-500">
+                    <a
+                      href="https://fleetcart.envaysoft.com/en/about-us"
+                      target="_self"
+                      data-text="About Us"
+                      class="nav-link menu-item"
+                    >
+                      About Us
+                    </a>
+                  </li>
+                  <li class="nav-item hover:font-medium hover:text-blue-500">
+                    <a
+                      href="https://fleetcart.envaysoft.com/en/terms-conditions"
+                      target="_self"
+                      data-text="Terms Of Use"
+                      class="nav-link menu-item"
+                    >
+                      Terms Of Use
+                    </a>
+                  </li>
+                  <li class="nav-item hover:font-medium hover:text-blue-500">
+                    <a
+                      href="https://fleetcart.envaysoft.com/en/faq"
+                      target="_self"
+                      data-text="FAQ"
+                      class="nav-link menu-item"
+                    >
+                      FAQ
+                    </a>
+                  </li>
+                  <li class="nav-item hover:font-medium hover:text-blue-500">
+                    <a
+                      href="https://codecanyon.net/item/fleetcart-laravel-ecommerce-system/23014826"
+                      target="_blank"
+                      data-text="BUY THEME!"
+                      class="nav-link menu-item"
+                    >
+                      BUY THEME!
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <span class="navigation-text block px-8 py-3.5 text-amber-600">
+                Free shipping over $100+
+              </span>
+            </div>
+          </section>
+          <!-- navigation end -->
+        </div>
+      </header>
+      <!-- header end -->
+    </div>
+  </body>
+</html>
