@@ -15,6 +15,7 @@ function swiperInit() {
         let index = i + 1;
         let isBrandsSlider = el.classList.contains('swiper-brands');
         let isBestDealsSlider = el.classList.contains('swiper-best-deals');
+        let isProductsGridSlider = el.classList.contains('swiper-products-grid');
 
         if (isBrandsSlider) {
             new Swiper(el, {
@@ -95,6 +96,74 @@ function swiperInit() {
                     nextEl: '.swiper-button-next' + '-' + index,
                     prevEl: '.swiper-button-prev' + '-' + index,
                 },
+            });
+        } else if (isProductsGridSlider) {
+            new Swiper(el, {
+
+                // Optional parameters
+
+                slidesPerView: 5,
+                spaceBetween: 0,
+                grid: {
+                    rows: 3,
+                    fill: 'row',
+
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next' + '-' + index,
+                    prevEl: '.swiper-button-prev' + '-' + index,
+                },
+
+
+                breakpoints: {
+                    640: {
+                        slidesPerView: 3,
+                        spaceBetween: 0,
+                        grid: {
+                            rows: 4,
+                            fill: 'row',
+
+                        }
+                    },
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 0,
+                        grid: {
+                            rows: 3,
+                            fill: 'row',
+
+                        }
+                    },
+                    1024: {
+                        slidesPerView: 5,
+                        spaceBetween: 0,
+                        grid: {
+                            rows: 3,
+                            fill: 'row',
+
+                        }
+                    },
+                    1280: {
+                        slidesPerView: 6,
+                        spaceBetween: 0,
+                        grid: {
+                            rows: 2,
+                            fill: 'row',
+
+                        }
+                    },
+                    1536: {
+                        slidesPerView: 7,
+                        spaceBetween: 0,
+                        grid: {
+                            rows: 2,
+                            fill: 'row',
+
+                        }
+                    },
+                }
             });
         } else {
             new Swiper(el, {
